@@ -1,4 +1,4 @@
-
+import './img.css'
 
 // eslint-disable-next-line react/prop-types
 export const ImageComponent = ( { imageUrl }) => {

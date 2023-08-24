@@ -1,0 +1,29 @@
+.general{
+    border: 2px solid black;
+    text-align: center;
+    width: 50%;
+    margin-left: auto; /* Mantener centrado y evitar movimiento hacia la izquierda */
+    margin-right: auto;
+    
+}
+
+.lista{
+    text-align: center;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+    
+}
+
+.botones {
+    
+    
+    
+}
+
+
+h1{ 
+    font-family: 'Courier New', Courier, monospace;
+}
