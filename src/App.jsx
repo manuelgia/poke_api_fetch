@@ -5,7 +5,7 @@ import { ImageComponent } from './img';
 
 const App = () => {
 
-    let [pokemonNumber, setNumber] = useState(1010);
+    let [pokemonNumber, setNumber] = useState(10);
     let [pokemonName, setPokemonName ] = useState("");
     let [pokemonImg, setPokemonImg] = useState("");
     
