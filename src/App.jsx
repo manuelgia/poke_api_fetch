@@ -1,5 +1,6 @@
 import { Btn } from './Btn';
 import { useState, useEffect } from 'react'
+import { ImageComponent } from './img';
 
 const App = () => {
 
@@ -7,9 +8,17 @@ const App = () => {
     let [pokemonName, setPokemonName ] = useState("");
     let [pokemonImg, setPokemonImg] = useState("");
     
+    
     function increaseNumber(){
 
         setNumber(pokemonNumber + 1)
+        console.log('valor antes del nuevo render: '+ pokemonNumber)
+        
+    }
+
+    function decreaseNumber(){
+
+        setNumber(pokemonNumber - 1)
         console.log('valor antes del nuevo render: '+ pokemonNumber)
         
     }
@@ -32,14 +41,19 @@ const App = () => {
 
     return( 
     <>
-        <button onClick={increaseNumber}>Next</button>
         
-        <div>{pokemonNumber} - {pokemonName} - {pokemonImg} </div>
-
-        <>
-        <Btn text= "Adelante" />
-        <Btn text= "Atras" />
-        </>       
+        
+        <div>
+        
+        {pokemonNumber} - {pokemonName} -  <ImageComponent imageUrl={pokemonImg}/> 
+        
+        </div>
+        
+        
+        <div className='botones'>
+        <button onClick={decreaseNumber}>Previous</button>   
+        <button onClick={increaseNumber}>Next</button> 
+        </div>      
     </>
     )}
 
